@@ -3,6 +3,6 @@
 
 git add .
 
-git commit -m 'initial commit'
+git commit -m 'add：new file'
 
 git push origin main
