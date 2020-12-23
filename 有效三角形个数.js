@@ -22,3 +22,5 @@ let triangleCount = function(nums) {
 
 	return count
 }
+
+triangleCount([2, 2, 3, 4])
