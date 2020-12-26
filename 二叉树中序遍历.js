@@ -1,5 +1,14 @@
-// 迭代实现
+// 递归实现
+const inorderTraverse = function(root, callback) {
+	if(root) {
+		inorderTraverse(root.left)
+		callback(root)
+		inorderTraverse(root.right)
+	}
+}
 
+
+// 迭代实现
 const inorderTraverse = function(root, callback) {
 	const stack = []
     const node = root
@@ -13,5 +22,5 @@ const inorderTraverse = function(root, callback) {
     	node = stack.pop()
     	callback(node)
     	node = node.right
-    }    
+    }  
 }
