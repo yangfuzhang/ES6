@@ -1,5 +1,4 @@
 // 递归
-
 const preorderTraverse = function(root, callback) {
 	if(root) {
 		callback(root)
@@ -9,7 +8,6 @@ const preorderTraverse = function(root, callback) {
 }
 
 // 非递归
-
 const preorderTraverse = function(root, callback) {
 	const stack = []
 
@@ -18,16 +16,16 @@ const preorderTraverse = function(root, callback) {
 	}
 
 	while(stack.length > 0) {
-        const curNode = stack.pop()
+        const node = stack.pop()
 
-        callback(curNode)
+        callback(node)
 
-        if(curNode.right !== null) {
-        	stack.push(curNode.right)
+        if(node.right !== null) {
+        	stack.push(node.right)
         }
 
-        if(curNode.left !== null) {
-        	stack.push(curNode.left)
+        if(node.left !== null) {
+        	stack.push(node.left)
         }
 	}
 }
