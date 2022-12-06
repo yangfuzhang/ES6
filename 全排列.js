@@ -17,7 +17,7 @@ let permute = function(nums) {
         let restPermuteds = permute(rest)
 
         for(let restPermuted of restPermuteds) {
-        	res.push(restPermuted.concat(use))
+        	res.push(restPermuted.concat(used))
         }
 	}
 
