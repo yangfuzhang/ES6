@@ -13,12 +13,12 @@ let permute = function(nums) {
 
 	for(let i = 0; i < n; i++) {
 		let used = nums[i]
-        let rest = nums.slice(0, i).concat(nums.slice(i + 1, n))
-        let restPermuteds = permute(rest)
+		let rest = nums.slice(0, i).concat(nums.slice(i + 1, n))
+		let restPermuteds = permute(rest)
 
-        for(let restPermuted of restPermuteds) {
-        	res.push(restPermuted.concat(used))
-        }
+		for(let restPermuted of restPermuteds) {
+			res.push(restPermuted.concat(used))
+		}
 	}
 
 	return res

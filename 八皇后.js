@@ -25,8 +25,8 @@ let solveNQueens = function(n) {
 				putQueen(rowIndex + 1, row.concat(columnIndex))
 
 				columns[columnIndex] = false
-                dia1[rowIndex + columnIndex] = false
-                dia2[rowIndex - columnIndex] = false
+				dia1[rowIndex + columnIndex] = false
+				dia2[rowIndex - columnIndex] = false
 			}
 		}
 	}
