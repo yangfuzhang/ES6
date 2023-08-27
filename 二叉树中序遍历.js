@@ -9,7 +9,7 @@ const inorderTraverse = function(root, callback) {
 
 
 // 迭代实现
-const inorderTraverse = function(root, callback) {
+const inorderTraverseAlt = function(root, callback) {
 	const stack = []
     const node = root
 

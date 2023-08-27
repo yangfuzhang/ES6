@@ -9,7 +9,7 @@ const postOrderTraverse = function(root, callback) {
 
 
 // 非递归实现
-const postOrderTraverse = function(root) {
+const postOrderTraverseAlt = function(root) {
     const list = []
     const stack = []
 

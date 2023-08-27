@@ -8,7 +8,7 @@ const preorderTraverse = function(root, callback) {
 }
 
 // 非递归
-const preorderTraverse = function(root, callback) {
+const preorderTraverseAlt = function(root, callback) {
 	const stack = []
 
 	if(root) {
